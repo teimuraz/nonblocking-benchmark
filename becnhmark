@@ -1,0 +1,88 @@
+Teimurazs-MacBook-Pro:bin Teimuraz$ ./gobench -u http://localhost:9000/par -k=true -c 500 -t 10
+Dispatching 500 clients
+Waiting for results...
+
+Requests:                            21250 hits
+Successful requests:                 10575 hits
+Network failed:                         18 hits
+Bad requests failed (!2xx):          10657 hits
+Successful requests rate:             1057 hits/sec
+Read throughput:                   2881629 bytes/sec
+Write throughput:                   200623 bytes/sec
+Test time:                              10 sec
+
+
+
+Teimurazs-MacBook-Pro:bin Teimuraz$ ./gobench -u http://localhost:8080/seq -k=true -c 500 -t 10
+Dispatching 500 clients
+Waiting for results...
+
+Requests:                            14945 hits
+Successful requests:                 14945 hits
+Network failed:                          0 hits
+Bad requests failed (!2xx):              0 hits
+Successful requests rate:             1494 hits/sec
+Read throughput:                    208689 bytes/sec
+Write throughput:                   142515 bytes/sec
+Test time:                              10 sec
+
+Teimurazs-MacBook-Pro:bin Teimuraz$ ./gobench -u http://localhost:9000/par -k=true -c 100 -t 10
+Dispatching 100 clients
+Waiting for results...
+
+Requests:                            15267 hits
+Successful requests:                 15267 hits
+Network failed:                          0 hits
+Bad requests failed (!2xx):              0 hits
+Successful requests rate:             1526 hits/sec
+Read throughput:                    619871 bytes/sec
+Write throughput:                   136766 bytes/sec
+Test time:                              10 sec
+
+Teimurazs-MacBook-Pro:bin Teimuraz$ ./gobench -u http://localhost:8080/seq -k=true -c 100 -t 10
+Dispatching 100 clients
+Waiting for results...
+
+Requests:                            18117 hits
+Successful requests:                 18117 hits
+Network failed:                          0 hits
+Bad requests failed (!2xx):              0 hits
+Successful requests rate:             1811 hits/sec
+Read throughput:                    252035 bytes/sec
+Write throughput:                   162131 bytes/sec
+Test time:                              10 sec
+
+
+TUNED QUEUE SIZE
+Teimurazs-MacBook-Pro:bin Teimuraz$ ./gobench -u http://localhost:9000/par -k=true -c 500 -t 10
+Dispatching 500 clients
+Waiting for results...
+
+Requests:                            17622 hits
+Successful requests:                 17622 hits
+Network failed:                          0 hits
+Bad requests failed (!2xx):              0 hits
+Successful requests rate:             1762 hits/sec
+Read throughput:                    716986 bytes/sec
+Write throughput:                   166946 bytes/sec
+Test time:                              10 sec
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-------- FETCH 10 IDS ------------------
